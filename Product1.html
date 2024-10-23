@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>мувσσк</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="icon" href="images/pngwing.com.ico">
+    <link rel="stylesheet" href="css/product.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    
+</head>
+<body onload="Cothebanquantam(); init()">
+    <!-- quảng cáo -->
+    <div class="banner">
+        <a>
+            <img src="images/banner.jpg" alt="ad-banner">
+        </a>
+    </div>
+    <!-- thanh tìm kiếm  -->
+    <section class="header">
+        <div class="container">
+            <a class="left-header" href="Home.html">
+                <img src="images/logo.png" alt="mybook-logo">
+            </a>
+            <form class="mid-header">
+                <input type="search" placeholder="Bạn cần tìm gì...?"/>
+                <button>
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </button>
+            </form>
+            <ul class="right-header">
+                <li class="item-menu" href="#">
+                    <a href="#">
+                        Thông báo<br>
+                        <i class="fa-solid fa-bell"></i>                        
+                    </a>
+                </li>
+                <li class="item-menu" href="#">
+                    <a href="#">
+                        Giỏ hàng<br>        
+                        <i class="fa-solid fa-cart-shopping fa-beat"></i>                    
+                    </a>
+                </li>
+                <li class="item-menu" href="#">
+                    <a href="#">
+                        Tài khoản<br>  
+                        <i class="fa-solid fa-user"></i>                          
+                    </a>
+                </li>
+                <li class="item-menu" href="#">
+                    <a href="#">
+                        Ngôn ngữ<br>     
+                        <i class="fa-solid fa-globe"></i>                       
+                    </a>
+                </li>
+            </ul>
+        </div>
+    <!-- thanh danh mục -->
+    </section>
+    <div class="contacts">
+        <div class="contact">
+            <h1 class="left-contact">
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </li>
+                    <li style="width:100%; text-align: center;">
+                        DANH MỤC SÁCH
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </li>
+                </ul>
+            </h1>
+            <div class="right-contact">
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        Hotline: 
+                        <strong>000000000 &nbsp;</strong>
+                    </li>
+                    <li>
+                        <a href="#">
+                            &nbsp; <i class="fa-solid fa-comment"></i>
+                            Hỗ trợ trực tuyến
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div></div>
+    <!-- mobile -->
+    <div class="mobile-header">
+        <div class="mobile-logo">
+            <a href="Home.html"><img src="images/logo.png"></a>
+        </div>
+        <div class="mobile-search-bar">
+            <div class="mobile-cate mobile-ico"><i class="fa-solid fa-bars"></i></div>
+            <form class="mobile-search">
+                <input type="mobile-search-main" placeholder="Bạn cần tìm gì...?"/>
+            </form>
+            <div class="mobile-cart mobile-ico"><i class="fa-solid fa-cart-shopping"></i></div>
+            <div class="mobile-user mobile-ico"><i class="fa-solid fa-user"></i></div>
+        </div>
+    </div>
+    <section style="background: linear-gradient(#f3e7e9, #e3eeff);">
+        <div style="padding: 2rem 4rem;">
+            <div>
+                <ul class="menu-tab">
+                    <li>
+                        <a href="Home.html">trang chủ</a> 
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-angle-right fa-sm"></i>
+                    </li>
+                    <li>
+                        <a href="#">top bán chạy nhất tuần</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-angle-right fa-sm"></i>
+                    </li>
+                    <li class="animated-tab"><a href="#">Lạc Giữa Tần Số Không Người Nghe</a></li>
+                </ul>
+                <div class="products-tab">
+                    <div class="picture">
+                        <img id="mainImg" title="Lạc Giữa Tần Số Không Người Nghe" src="images/bestselling/best-1.jpg" alt="Book"/>
+                        <div style="display: flex" class="pic-detail">
+                            <div><img src="images/bestselling/best-1.jpg" alt="Book"></div>
+                            <div><img src="images/bestselling/best-1.2.jpg" alt="detail_1"></div>
+                            <div><img src="images/bestselling/best-1.3.jpg" alt="detail_2"></div>
+                            <div><img src="images/bestselling/best-1.jpg" alt="detail_3"></div>
+                            <div><img src="images/bestselling/best-1.2.jpg" alt="detail_4"></div>                            
+                            <!-- <button><i class="fa-solid fa-angle-left"></i></button>
+                            <button><i class="fa-solid fa-angle-right"></i></button> -->
+                        </div>
+                    </div>
+                    <div class="name-tab">
+                        <div>
+                            <span style="font: normal 2rem Arial; color: tomato">Lạc Giữa Tần Số Không Người Nghe</span>
+                        </div>
+                        <div style="padding-bottom: 1.5rem;" class="pro-quality">
+                            <div style="padding-left: 0">
+                                <span>4</span>
+                                <i class="fa-solid fa-star" style="color: lightsalmon"></i>
+                                <i class="fa-solid fa-star" style="color: lightsalmon"></i>
+                                <i class="fa-solid fa-star" style="color: lightsalmon"></i>
+                                <i class="fa-solid fa-star" style="color: lightsalmon"></i>
+                                <i class="fa-regular fa-star" style="color: lightsalmon"></i>
+                            </div>
+                            <div>
+                                <span>26 lượt đánh giá</span>
+                            </div>
+                            <div>
+                                <span>500 Lượt xem</span>
+                            </div>
+                            <div style="border-right: none;">
+                                <span>50 Đã bán</span>
+                            </div>
+                        </div>
+                        <div class="pro-price">
+                            <div>
+                                <span style="text-decoration-line: line-through;">68.800₫</span>
+                            </div>
+                            <div>
+                                <span style="font-size: 1.8rem; color:tomato">86.000₫</span>
+                            </div>                            
+                            <div>    
+                                <button>-20%</button>
+                            </div>
+                        </div>
+                        <div style="padding: 1rem 0" class="info-tab">
+                            <div>
+                                <span>Tác giả: <b style="color: lightsalmon">Macmart</b></span>
+                            </div>
+                            <div>
+                                <span style="display: flex">Vận chuyển:
+                                    <div class="same-tab">
+                                        <span>Phương thức</span>
+                                        <span style="padding-left: 1rem; color: dodgerblue">Thay đổi</span>
+                                    </div>
+                                </span>
+                            </div>
+                            <div>
+                                <span style="display: flex">Chính sách đổi trả:
+                                    <div class="same-tab">
+                                        <span>Đổi trả sản phẩm trong 30 ngày</span>
+                                        <span style="padding-left: 1rem; color: dodgerblue">Xem thêm</span>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                        <div style="display:flex" >
+                            <div style="padding: 1rem 0 1rem 0">
+                                <span>Số lượng:</span>
+                            </div>
+                            <div class="quantity-tab">
+                                <button><i class="fa-solid fa-minus"></i></button>
+                                <input type="text" maxvalue="99" minvalue="1" value="1">
+                                <button><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                            <div style="padding: 1rem 0 0 1rem ">
+                                <span>200 sản phẩm có sẵn</span>
+                            </div>
+                        </div>
+                        <div style="padding: 2rem 0">
+                            <button class="add-tab">
+                                <i class="fa-solid fa-cart-shopping" style="color:tomato"></i> Thêm vào giỏ hàng
+                            </button>
+                            <button class="bought-tab">Mua ngay</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="voucher-tab">
+                    <div>
+                        <div><i class="fa-solid fa-ticket fa-2xl" style="color:tomato; padding-top:0.9rem;"></i></div>
+                        <div class="word-font">
+                            <span style="padding-left: 1rem">Ưa đãi liên quan</span>
+                        </div>
+                    </div>
+                    <div class="vcmini-tab">
+                        <div>
+                            <span>Tất cả</span>
+                        </div>
+                        <div>
+                            <span>Mã giảm giá</span>
+                        </div>
+                        <div>
+                            <span>Mã thanh toán</span>
+                        </div>
+                        <div>
+                            <span>Ưu đãi khác</span>
+                        </div>                        
+                    </div>
+                    <hr color="lightsalmon">
+                    <div style="justify-content: center; padding-top: 2rem">
+                        <span style="font: italic bold 1.3rem fangsong">Bạn chưa có mã giảm giá nào. Vui lòng đăng nhập để biết thêm thông tin.</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="pro-detail">
+                        <div class="word-font">
+                            <span>Thông tin sản phẩm</span>                         
+                        </div>                            
+                        <div>
+                            <div>
+                                <table style="padding-top:1rem">
+                                    <colgroup>
+                                        <col width="25%">
+                                    </colgroup>
+                                    <tbody class="pro-detail-tab">
+                                        <tr>
+                                            <th>Mã hàng:</th>
+                                            <td>88888888888</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Tác giả:</th>
+                                            <td>Macmart</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Tên nhà cung cấp:</th>
+                                            <td>Skybooks</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Nhà xuất bản:</th>
+                                            <td>Phụ Nữ Việt Nam</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Năm xuất bản:</th>
+                                            <td>2023</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Ngôn ngữ:</th>
+                                            <td>Tiếng việt</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Số trang:</th>
+                                            <td>192</td>
+                                        </tr>                                    
+                                        <tr>
+                                            <th>Trọng lượng:</th>
+                                            <td>210gr</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Kích thước:</th>
+                                            <td>20.5 x 12.5 x 0.9 cm</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Định dạng:</th>
+                                            <td>Bìa mềm</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <hr>
+                            <div style="padding-top: 1rem">
+                                <div class="word-font">
+                                    <span>Giới thiệu sản phẩm</span>
+                                </div>
+                                <div>
+                                    <br>
+                                    <p style="font-weight: bold;">Lạc Giữa Tần Số Không Người Nghe</p><br>  
+                                    <p>Có những đứa trẻ luôn cảm thấy bản thân lạc lõng với chính thế giới mình đang sống, 
+                                        lạc giữa cộng đồng mình đang tồn tại và thậm chí là cảm thấy lạ lẫm trong chính gia đình của mình.</p><br>                                      
+                                        <p>“tôi lạc giữa những vùng biển khơi</p><br>                                        
+                                        <p>lạc giữa ánh sao trời - giữa vũ trụ xa khuất</p><br>                                      
+                                        <p>tôi lạc ngay cả khi đứng trên mặt đất</p><br>                                        
+                                        <p>trăm lần tìm cách cất giọng</p><br>                                       
+                                        <p>vẫn không trùng một ai…”</p><br>                                        
+                                        <p>Vậy lối thoát nào cho những đứa trẻ đi lạc?</p><br>                                        
+                                        <p>Câu trả lời thoắt ẩn, thoắt hiện qua từng dòng chữ, từng vần thơ trong “Lạc giữa tần số không người nghe”. Ngay từ những trang viết đầu tiên, bạn sẽ đặt chân vào một cuộc đấu tranh giữa thôi thúc vừa muốn c.h.ế.t vừa muốn sống. “Mỗi ngày, mình đều đứng giữa lằn ranh, nhìn sự sống và cái c.h.ế.t đấu đá, cắn xé lẫn nhau cho đến khi tìm ra kẻ chiến thắng cuối cùng. Dù đau đớn không chịu nổi, dù muốn chết đến phát điên, nhưng ý chí sống vẫn ở đó thì mình vẫn lựa chọn sự sống”.</p><br>                                        
+                                        <p>Tác giả macmart mở ra một thế giới nội tâm đầy mâu thuẫn, giằng co giữa những cảm giác cực đoan, suy nghĩ tệ hại, rối rắm và hỗn độn với những tranh đấu rất thực của người mắc chứng tr.ầm cả.m. Cũng là một người đã từng trải qua những tổn thương và đang trong hành trình để hàn gắn những “vết nứt”, macmart cùng câu chữ của mình sẽ là điểm tựa vững chắc cho những người trẻ đang cảm thấy chênh vênh và đơn độc trên hành trình trưởng thành.</p><br>                                        
+                                        <p>Tr.ầm cả.m không gây đau đớn lên thể xác mà nó sẽ từ từ gặm nhấm tâm hồn bạn, từng chút, từng chút một cho đến khi bộ não và trái tim bạn chỉ còn lại một khối trống rỗng. Nhưng sâu thẳm trong một tâm hồn thương tổn đó là khát khao cháy bỏng nhận được sự thấu cảm và quan tâm từ những người xung quanh.</p><br>                                        
+                                        <p>Qua cuốn sách “Lạc giữa tần số không người nghe”, tác giả macmart muốn gửi đến bạn một chút ấm áp như tia sáng bé nhỏ xuyên qua những khe nứt.</p><br>                                        
+                                        <p>Mong rằng mỗi ngày trôi qua, bạn đều cảm thấy đó là ngày đáng sống.</p><br>                                        
+                                        <p>Mong rằng bốn mùa bình an, trời quang, mây tạnh, gió thổi mát lòng.</p><br>                                        
+                                        <p>Chúc cho những đứa trẻ trong thân hình người lớn luôn được yêu thương và vỗ về.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                    <div class="pro-hint">
+                        <div  class="word-font" style="padding-bottom: 1rem">
+                            <span>Có thể bạn quan tâm</span>
+                        </div>
+                        <div class="products" id="products">
+                            <div class="products-hint">
+                                <div>
+                                    <div class="pro-image"><img title="Ứng dụng Web" src="images/sachcntt/Ứng dụng Web.jpg" alt="Books" /></div>
+                                    <div  class="word-font">
+                                        <span>Ứng Dụng Web</span>
+                                    </div>
+                                    <div>
+                                        <span style="font-size: 1.3rem; color:tomato">29.000₫</span>
+                                    </div>  
+                                    <div class="pro-hint1" style="display: flex; align-items: baseline;">
+                                        <div>
+                                            <span style="text-decoration-line: line-through; padding-right: 0.5rem;">38.000₫</span>
+                                        </div>
+                                        <div>    
+                                            <button>-25%</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pro-comment">
+                        <div class="word-font">
+                            <span>Đánh giá sản phẩm</span>
+                        </div>
+                        <br>
+                        <hr color="lightsalmon">
+                        <div class="pro-comment1">
+                            <div>
+                                <span style="font: oblique bold 2rem fangsong; color:sandybrown">Chưa có đánh giá</span>
+                            </div>
+                            <div style="display: flex; align-items: baseline; justify-content: center;">
+                                <div class="com-pic1"></div>
+                                <div class="com-pic2">
+                                    <span style="color: red">0</span>                               
+                                </div>
+                                <div class="com-pic1"></div> 
+                            </div>                           
+                            <div>
+                                <span>
+                                    <i class="fa-regular fa-star" style="color: lightsalmon"></i>
+                                    <i class="fa-regular fa-star" style="color: lightsalmon"></i>
+                                    <i class="fa-regular fa-star" style="color: lightsalmon"></i>
+                                    <i class="fa-regular fa-star" style="color: lightsalmon"></i>
+                                    <i class="fa-regular fa-star" style="color: lightsalmon"></i>
+                                    </span>
+                            </div>
+                            <div>
+                                <span>(0 đánh giá)</span>
+                            </div>
+                            <div>
+                                <span>Bạn cần đăng nhập để có thể bình luận. 
+                                    Vui lòng <i><b>Đăng nhập</b></i> hoặc <i><b>Đăng ký</b></i>.</span>
+                            </div>
+                            <br>
+                            <hr color="lightsalmon">
+                        </div>
+                        <div class="pro-comment2">
+                            <div style="display: flex; justify-content: space-between;">
+                                <span>0 bình luận</span>
+                                <span> 
+                                    <i class="fa-solid fa-arrow-right-to-bracket" style="color:red"></i> 
+                                    Đăng nhập 
+                                </span>
+                            </div>
+                            <div class="pro-comment2-text">
+                                <div style="padding-bottom: 1rem">
+                                    <i class="fa-regular fa-circle-user fa-2xl" style="color:tomato"></i>
+                                </div>
+                                <textarea name="comments" cols="50" rows="5" placeholder="HHDOH">
+                                </textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- footer -->
+   <footer>
+    <div class="left-footer">
+        <img src="images/logo.png" style="display:block;">
+        Lầu 5, 387-389 Hai Bà Trưng Quận 3 TP HCM Công Ty Cổ Phần Phát Hành Sách TP HCM - FAHASA60 - 62 Lê Lợi, Quận 1, TP. HCM, Việt Nam
+Fahasa.com nhận đặt hàng trực tuyến và giao hàng tận nơi. KHÔNG hỗ trợ đặt mua và nhận hàng trực tiếp tại văn phòng cũng như tất cả Hệ Thống Fahasa trên toàn quốc.
+        <img src="images/logo-bo-cong-thuong-da-thong-bao.png">
+        <ul class="social-media">
+            <li>
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/Facebook-on.png">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="images/Insta-on.png">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tumblr.com/" target="_blank">
+                    <img src="images/tumblr-on.png">
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter-on.png">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <img src="images/Youtube-on.png">
+                </a>
+            </li>
+        </ul>
+        <ul class="operating-systems">
+            <li>
+                <a href="#">
+                    <img src="images/android.png">
+                </a>
+            </li>
+            <div></div>
+            <li>
+                <a href="#">
+                    <img src="images/appstore.png">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="right-footer">
+        <ul class="functions">
+            <li>
+                <ul class="sub-function">
+                    <h1>
+                        DỊCH VỤ
+                    </h1>
+                    <li>
+                        <a href="#">
+                            Điều khoản sử dụng
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Chính sách bảo mật
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Giới thiệu MyBook
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Hệ thống trung tâm nhà sách
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="sub-function">
+                    <h1>HỖ TRỢ</h1>
+                    <li>
+                        <a href="#">
+                            Chính sách đổi trả hoàn tiền
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Chính sách vận chuyển
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Chính sách bảo hành- bồi hoàn                               
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Phương thức thanh toán
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="sub-function">
+                    <h1>TÀI KHOẢN CỦA TÔI</h1>
+                    <li>
+                        <a href="#">
+                            Đăng nhập/Tạo mới tài khoản
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Thay đổi địa chỉ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Chi tiết tài khoản
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Lịch sử mua hàng
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="payment">
+            <li><a href="#"><img src="images/vnpost.png" alt="vnpost"></a></li>
+            <li><a href="#"><img src="images/ahamove_logo.png" alt="ahamove"></a></li>
+            <li><a href="#"><img src="images/icon_giao_hang_nhanh.png" alt="giaohangnhanh"></a></li>
+            <li><a href="#"><img src="images/icon_snappy.png" alt="snappy"></a></li>
+        </ul>
+        <ul class="ship">
+            <li><a href="#"><img src="images/vnpay_logo.png" alt="vnpay"></a></li>
+            <li><a href="#"><img src="images/ZaloPay-logo-130x83.png" alt="zalopay"></a></li>
+            <li><a href="#"><img src="images/momopay.png" alt="momopay"></a></li>
+            <li><a href="#"><img src="images/shopeepay_logo.png" alt="shopeepay"></a></li>
+            <li><a href="#"><img src="images/logo_moca_120.jpg" alt="moca"></a></li>
+        </ul>
+    </div>
+   </footer>
+   <script src="js/product.js"></script>
+</body>
+</html>

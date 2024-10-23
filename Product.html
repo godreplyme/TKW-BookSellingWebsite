@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>мувσσк</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="icon" href="images/pngwing.com.ico">
+    <link rel="stylesheet" href="css/product.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    
+</head>
+<body onload="Cothebanquantam(); init()">
+    <div class="mobile-category">
+        <div class="mobile-category-header">
+            <div class="mobile-category-header-back" onclick="mobileCateOff()">
+                <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div class="mobile-category-header-text">
+                    DANH MỤC SẢN PHẨM
+            </div>
+        </div>
+        <div class="mobile-category-body">
+            <ul class="mobile-subcate">
+                <li>
+                    <a>Sách Bán Chạy</a>
+                </li>
+                <li>
+                    <a>Sách Mới Phát Hành</a>
+                </li>
+                <li>
+                    <a>Sách Sắp Phát Hành</a>
+                </li>
+                <li>
+                    <a>Sách Giáo Khoa - Giáo Trình</a>
+                    <ul class="mobile-category-item">
+                        <li><a href="#">Cấp I</a></li>
+                        <li><a href="#">Cấp II</a></li>
+                        <li><a href="#">Cấp III</a></li>
+                        <li><a href="#">Sách tham khảo cấp I</a></li>
+                        <li><a href="#">Sách tham khảo cấp II</a></li>
+                        <li><a href="#">Sách tham khảo cấp III</a></li>
+                        <li><a href="#">Đại học</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Sách Văn Học Trong Nước</a>
+                    <ul class="mobile-category-item">
+                        <li><a href="#">Phê Bình Văn Học</a></li>
+                        <li><a href="#">Phóng Sự - Ký Sự</a></li>
+                        <li><a href="#">Sách Về Nhân Vật Văn Học</a></li>
+                        <li><a href="#">Thơ Ca</a></li>
+                        <li><a href="#">Tiểu Thuyết Lãng Mạn</a></li>
+                        <li><a href="#">Tiểu Thuyết Lịch Sử</a></li>
+                        <li><a href="#">Truyện - Thơ Ca Dân Gian</a></li>
+                        <li><a href="#">Truyện Dài</a></li>
+                        <li><a href="#">Truyện Giả Tưởng - Thần Bí</a></li>
+                        <li><a href="#">Truyện Kiếm Hiệp</a></li>
+                        <li><a href="#">Truyện Ngắn - Tản Văn</a></li>
+                        <li><a href="#">Truyện Thiếu Nhi</a></li>
+                        <li><a href="#">Truyện Trinh Thám, Vụ Án</a></li>
+                        <li><a href="#">Tự Truyện - Hồi Ký</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Sách Văn Học Nước Ngoài</a>
+                </li>
+                <li>
+                    <a>Sách Tin Học - Ngoại Ngữ</a>
+                </li>
+                <li>
+                    <a>Sách Chuyên Ngành</a>
+                </li>
+                <li>
+                    <a>Truyện Tranh - Manga</a>
+                </li>
+                <li>
+                    <a href="#">Tạp Chí Văn Phòng Phẩm</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="big-body">
+        <!-- quảng cáo -->
+    <div class="banner">
+        <a>
+            <img src="images/banner.jpg" alt="ad-banner">
+        </a>
+    </div>
+    <!-- thanh tìm kiếm  -->
+    <section class="header">
+        <div class="container">
+            <a class="left-header" href="nhà.html">
+                <img src="images/logo.png" alt="mybook-logo">
+            </a>
+            <form class="mid-header">
+                <input type="search" placeholder="Bạn cần tìm gì...?"/>
+                <button>
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </button>
+            </form>
+            <ul class="right-header">
+                <li class="item-menu" href="#">
+                    <a href="#">
+                        Thông báo<br>
+                        <i class="fa-solid fa-bell"></i>                        
+                    </a>
+                </li>
+                <li class="item-menu" href="#">
+                    <a href="#">
+                        Giỏ hàng<br>        
+                        <i class="fa-solid fa-cart-shopping fa-beat"></i>                    
+                    </a>
+                </li>
+                <li class="item-menu" href="#">
+                    <a href="#">
+                        Tài khoản<br>  
+                        <i class="fa-solid fa-user"></i>                          
+                    </a>
+                </li>
+                <li class="item-menu" href="#">
+                    <a href="#">
+                        Ngôn ngữ<br>     
+                        <i class="fa-solid fa-globe"></i>                       
+                    </a>
+                </li>
+            </ul>
+        </div>
+    <!-- thanh danh mục -->
+    </section>
+    <div class="contacts">
+        <div class="contact">
+            <h1 class="left-contact">
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </li>
+                    <li style="width:100%; text-align: center;">
+                        DANH MỤC SÁCH
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </li>
+                </ul>
+            </h1>
+            <div class="right-contact">
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        Hotline: 
+                        <strong>000000000 &nbsp;</strong>
+                    </li>
+                    <li>
+                        <a href="#">
+                            &nbsp; <i class="fa-solid fa-comment"></i>
+                            Hỗ trợ trực tuyến
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div></div>
+    <!-- mobile-header -->
+    <div class="mobile-header">
+        <div class="mobile-logo">
+            <a href="nhà.html"><img src="images/logo.png"></a>
+        </div>
+        <div class="mobile-search-bar">
+            <div class="mobile-cate mobile-ico" onclick="mobileCateOn()"><i class="fa-solid fa-bars"></i></div>
+            <form class="mobile-search">
+                <input type="mobile-search-main" placeholder="Bạn cần tìm gì...?"/>
+            </form>
+            <div class="mobile-cart mobile-ico"><i class="fa-solid fa-cart-shopping"></i></div>
+            <div class="mobile-user mobile-ico"><i class="fa-solid fa-user"></i></div>
+        </div>
+    </div>
+    <section style="background: linear-gradient(#f3e7e9, #e3eeff);">
+        <div style="padding: 2rem 4rem;">
+            <div>
+                <ul class="menu-tab">
+                    <li>
+                        <a href="nhà.html">trang chủ</a> 
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-angle-right fa-sm"></i>
+                    </li>
+                    <li>
+                        <a href="#">sách chuyên ngành</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-angle-right fa-sm"></i>
+                    </li>
+                    <li class="animated-tab"><a href="#">lập trình java</a></li>
+                </ul>
+                <div class="products-tab">
+                    <div class="picture">
+                        <img id="mainImg" title="Lập trình Java" src="images/laptrinhjava.jpg" alt="Java Book"/>
+                        <div style="display: flex" class="pic-detail">
+                            <div><img src="images/laptrinhjava.jpg" alt="Java Book"></div>
+                            <div><img src="images/page.jpg" alt="detail_1"></div>
+                            <div><img src="images/page1.jpg" alt="detail_2"></div>
+                            <div><img src="images/page2.jpg" alt="detail_3"></div>
+                            <div><img src="images/page3.jpg" alt="detail_3"></div>                            
+                            <!-- <button><i class="fa-solid fa-angle-left"></i></button>
+                            <button><i class="fa-solid fa-angle-right"></i></button> -->
+                        </div>
+                    </div>
+                    <div class="name-tab">
+                        <div>
+                            <span style="font: normal 2rem Arial; color: tomato">Lập Trình Java</span>
+                        </div>
+                        <div style="padding-bottom: 1.5rem;" class="pro-quality">
+                            <div style="padding-left: 0">
+                                <span>4</span>
+                                <i class="fa-solid fa-star" style="color: lightsalmon"></i>
+                                <i class="fa-solid fa-star" style="color: lightsalmon"></i>
+                                <i class="fa-solid fa-star" style="color: lightsalmon"></i>
+                                <i class="fa-solid fa-star" style="color: lightsalmon"></i>
+                                <i class="fa-regular fa-star" style="color: lightsalmon"></i>
+                            </div>
+                            <div>
+                                <span>26 lượt đánh giá</span>
+                            </div>
+                            <div>
+                                <span>500 Lượt xem</span>
+                            </div>
+                            <div style="border-right: none;">
+                                <span>50 Đã bán</span>
+                            </div>
+                        </div>
+                        <div class="pro-price">
+                            <div>
+                                <span style="text-decoration-line: line-through;">38.000₫</span>
+                            </div>
+                            <div>
+                                <span style="font-size: 1.8rem; color:tomato">29.000₫</span>
+                            </div>                            
+                            <div>    
+                                <button>-25%</button>
+                            </div>
+                        </div>
+                        <div style="padding: 1rem 0" class="info-tab">
+                            <div>
+                                <span>Tác giả: <b style="color: lightsalmon">Dương Hữu Thành</b></span>
+                            </div>
+                            <div>
+                                <span style="display: flex">Vận chuyển:
+                                    <div class="same-tab">
+                                        <span>Phương thức</span>
+                                        <span style="padding-left: 1rem; color: dodgerblue">Thay đổi</span>
+                                    </div>
+                                </span>
+                            </div>
+                            <div>
+                                <span style="display: flex">Chính sách đổi trả:
+                                    <div class="same-tab">
+                                        <span>Đổi trả sản phẩm trong 30 ngày</span>
+                                        <span style="padding-left: 1rem; color: dodgerblue">Xem thêm</span>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                        <div style="display:flex" >
+                            <div style="padding: 1rem 0 1rem 0">
+                                <span>Số lượng:</span>
+                            </div>
+                            <div class="quantity-tab">
+                                <button><i class="fa-solid fa-minus"></i></button>
+                                <input type="text" maxvalue="99" minvalue="1" value="1">
+                                <button><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                            <div style="padding: 1rem 0 0 1rem ">
+                                <span>200 sản phẩm có sẵn</span>
+                            </div>
+                        </div>
+                        <div style="padding: 2rem 0">
+                            <button class="add-tab">
+                                <i class="fa-solid fa-cart-shopping" style="color:tomato"></i> Thêm vào giỏ hàng
+                            </button>
+                            <button class="bought-tab">Mua ngay</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="voucher-tab">
+                    <div>
+                        <div><i class="fa-solid fa-ticket fa-2xl" style="color:tomato; padding-top:0.9rem;"></i></div>
+                        <div class="word-font">
+                            <span style="padding-left: 1rem">Ưa đãi liên quan</span>
+                        </div>
+                    </div>
+                    <div class="vcmini-tab">
+                        <div>
+                            <span>Tất cả</span>
+                        </div>
+                        <div>
+                            <span>Mã giảm giá</span>
+                        </div>
+                        <div>
+                            <span>Mã thanh toán</span>
+                        </div>
+                        <div>
+                            <span>Ưu đãi khác</span>
+                        </div>                        
+                    </div>
+                    <hr color="lightsalmon">
+                    <div style="justify-content: center; padding-top: 2rem">
+                        <span style="font: italic bold 1.3rem fangsong">Bạn chưa có mã giảm giá nào. Vui lòng đăng nhập để biết thêm thông tin.</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="pro-detail">
+                        <div class="word-font">
+                            <span>Thông tin sản phẩm</span>                         
+                        </div>                            
+                        <div>
+                            <div>
+                                <table style="padding-top:1rem">
+                                    <colgroup>
+                                        <col width="25%">
+                                    </colgroup>
+                                    <tbody class="pro-detail-tab">
+                                        <tr>
+                                            <th>Mã hàng:</th>
+                                            <td>99999999999</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Tác giả:</th>
+                                            <td>Dương Hữu Thành (chủ biên)</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Tác quyền:</th>
+                                            <td>Trường Đại học Mở TP.HCM</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Nhà xuất bản:</th>
+                                            <td>Thông tin truyền thông</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Năm xuất bản:</th>
+                                            <td>2021</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Ngôn ngữ:</th>
+                                            <td>Tiếng việt</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Số trang:</th>
+                                            <td>457</td>
+                                        </tr>                                    
+                                        <tr>
+                                            <th>Trọng lượng:</th>
+                                            <td>100gr</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Kích thước:</th>
+                                            <td>25 x 15 x 1 cm</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Định dạng:</th>
+                                            <td>Bìa mềm</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <hr>
+                            <div style="padding-top: 1rem">
+                                <div class="word-font">
+                                    <span>Giới thiệu sản phẩm</span>
+                                </div>
+                                <div>
+                                    <br>
+                                    <p  style="font-weight: bold;">CẤU TRÚC HỌC LIỆU</p><br>  
+                                    <p>Tài liệu được soạn thành 5 chương, nội dung tóm tắt như sau:</p><br>                                        
+                                    <p>Chương 1. Giới thiệu ngôn ngữ Java: trình bày sơ lược lịch sử hình thành và phát triển Java, những đặc trưng nổi bật của ngôn ngữ Java.</p><br>
+                                    <p>Chương 2. Lập trình Java căn bản: trình bày những kiến thức căn bản lập trình Java và một số kiến thức nâng cao như lập trình tổng quát, biểu thức chính quy.</p><br>
+                                    <p>Chương 3. Lập trình giao diện với JavaFX: trình bày việc phát triển ứng dụng RIA với công nghệ JavaFX.</p><br>
+                                    <p>Chương 4. Lập trình cơ sở dữ liệu: trình bày tương tác với cơ sở dữ liệu trong Java bằng JDBC và hibernate.</p><br>
+                                    <p>Chương 5. Lập trình ứng dụng Web: trình bày việc phát triển ứng dụng Web bằng JSF.</p>                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                    <div class="pro-hint">
+                        <div  class="word-font" style="padding-bottom: 1rem">
+                            <span>Có thể bạn quan tâm</span>
+                        </div>
+                        <div class="products" id="products">
+                            <div class="products-hint">
+                                <div>
+                                    <div class="pro-image"><img title="Ứng dụng Web" src="images/sachcntt/Ứng dụng Web.jpg" alt="Books" /></div>
+                                    <div  class="word-font">
+                                        <span>Ứng Dụng Web</span>
+                                    </div>
+                                    <div>
+                                        <span style="font-size: 1.3rem; color:tomato">29.000₫</span>
+                                    </div>  
+                                    <div class="pro-hint1" style="display: flex; align-items: baseline;">
+                                        <div>
+                                            <span style="text-decoration-line: line-through; padding-right: 0.5rem;">38.000₫</span>
+                                        </div>
+                                        <div>    
+                                            <button>-25%</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pro-comment">
+                        <div class="word-font">
+                            <span>Đánh giá sản phẩm</span>
+                        </div>
+                        <br>
+                        <hr color="lightsalmon">
+                        <div class="pro-comment1">
+                            <div>
+                                <span style="font: oblique bold 2rem fangsong; color:sandybrown">Chưa có đánh giá</span>
+                            </div>
+                            <div style="display: flex; align-items: baseline; justify-content: center;">
+                                <div class="com-pic1"></div>
+                                <div class="com-pic2">
+                                    <span style="color: red">0</span>                               
+                                </div>
+                                <div class="com-pic1"></div> 
+                            </div>                           
+                            <div>
+                                <span>
+                                    <i class="fa-regular fa-star" style="color: lightsalmon"></i>
+                                    <i class="fa-regular fa-star" style="color: lightsalmon"></i>
+                                    <i class="fa-regular fa-star" style="color: lightsalmon"></i>
+                                    <i class="fa-regular fa-star" style="color: lightsalmon"></i>
+                                    <i class="fa-regular fa-star" style="color: lightsalmon"></i>
+                                    </span>
+                            </div>
+                            <div>
+                                <span>(0 đánh giá)</span>
+                            </div>
+                            <div>
+                                <span>Bạn cần đăng nhập để có thể bình luận. 
+                                    Vui lòng <i><b>Đăng nhập</b></i> hoặc <i><b>Đăng ký</b></i>.</span>
+                            </div>
+                            <br>
+                            <hr color="lightsalmon">
+                        </div>
+                        <div class="pro-comment2">
+                            <div style="display: flex; justify-content: space-between;">
+                                <span>0 bình luận</span>
+                                <span> 
+                                    <i class="fa-solid fa-arrow-right-to-bracket" style="color:red"></i> 
+                                    Đăng nhập 
+                                </span>
+                            </div>
+                            <div class="pro-comment2-text">
+                                <div style="padding-bottom: 1rem">
+                                    <i class="fa-regular fa-circle-user fa-2xl" style="color:tomato"></i>
+                                </div>
+                                <textarea name="comments" cols="50" rows="5" placeholder="HHDOH">
+                                </textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- footer -->
+   <footer>
+    <div class="left-footer">
+        <img src="images/logo.png" style="display:block;">
+        Lầu 5, 387-389 Hai Bà Trưng Quận 3 TP HCM Công Ty Cổ Phần Phát Hành Sách TP HCM - FAHASA60 - 62 Lê Lợi, Quận 1, TP. HCM, Việt Nam
+Fahasa.com nhận đặt hàng trực tuyến và giao hàng tận nơi. KHÔNG hỗ trợ đặt mua và nhận hàng trực tiếp tại văn phòng cũng như tất cả Hệ Thống Fahasa trên toàn quốc.
+        <img src="images/logo-bo-cong-thuong-da-thong-bao.png">
+        <ul class="social-media">
+            <li>
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/Facebook-on.png">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="images/Insta-on.png">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tumblr.com/" target="_blank">
+                    <img src="images/tumblr-on.png">
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter-on.png">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <img src="images/Youtube-on.png">
+                </a>
+            </li>
+        </ul>
+        <ul class="operating-systems">
+            <li>
+                <a href="#">
+                    <img src="images/android.png">
+                </a>
+            </li>
+            <div></div>
+            <li>
+                <a href="#">
+                    <img src="images/appstore.png">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="right-footer">
+        <ul class="functions">
+            <li>
+                <ul class="sub-function">
+                    <h1>
+                        DỊCH VỤ
+                    </h1>
+                    <li>
+                        <a href="#">
+                            Điều khoản sử dụng
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Chính sách bảo mật
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Giới thiệu MyBook
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Hệ thống trung tâm nhà sách
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="sub-function">
+                    <h1>HỖ TRỢ</h1>
+                    <li>
+                        <a href="#">
+                            Chính sách đổi trả hoàn tiền
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Chính sách vận chuyển
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Chính sách bảo hành- bồi hoàn                               
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Phương thức thanh toán
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="sub-function">
+                    <h1>TÀI KHOẢN CỦA TÔI</h1>
+                    <li>
+                        <a href="#">
+                            Đăng nhập/Tạo mới tài khoản
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Thay đổi địa chỉ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Chi tiết tài khoản
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Lịch sử mua hàng
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="payment">
+            <li><a href="#"><img src="images/vnpost.png" alt="vnpost"></a></li>
+            <li><a href="#"><img src="images/ahamove_logo.png" alt="ahamove"></a></li>
+            <li><a href="#"><img src="images/icon_giao_hang_nhanh.png" alt="giaohangnhanh"></a></li>
+            <li><a href="#"><img src="images/icon_snappy.png" alt="snappy"></a></li>
+        </ul>
+        <ul class="ship">
+            <li><a href="#"><img src="images/vnpay_logo.png" alt="vnpay"></a></li>
+            <li><a href="#"><img src="images/ZaloPay-logo-130x83.png" alt="zalopay"></a></li>
+            <li><a href="#"><img src="images/momopay.png" alt="momopay"></a></li>
+            <li><a href="#"><img src="images/shopeepay_logo.png" alt="shopeepay"></a></li>
+            <li><a href="#"><img src="images/logo_moca_120.jpg" alt="moca"></a></li>
+        </ul>
+    </div>
+   </footer>
+    </div>
+   <script src="js/product.js"></script>
+   <script src="js/home.js"></script>
+</body>
+</html>
